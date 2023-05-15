@@ -44,6 +44,11 @@ public class ImageCarouselViewController:UIPageViewController, ImageViewerTransi
         _navBar.isTranslucent = true
         _navBar.setBackgroundImage(UIImage(), for: .default)
         _navBar.shadowImage = UIImage()
+        if #available(iOS 14.0, *) {
+            let appearance = UINavigationBarAppearance()
+            appearance.configureWithTransparentBackground()
+            _navBar.standardAppearance = appearance
+        }
         return _navBar
     }()
     
