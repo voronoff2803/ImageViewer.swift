@@ -7,9 +7,9 @@ public enum ImageViewerTheme {
     var color:UIColor {
         switch self {
             case .light:
-                return .white
+                return .clear
             case .dark:
-                return .black
+                return .clear
         }
     }
     
