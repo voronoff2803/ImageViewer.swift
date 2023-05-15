@@ -7,18 +7,18 @@ public enum ImageViewerTheme {
     var color:UIColor {
         switch self {
             case .light:
-                return .white
+                return .clear
             case .dark:
-                return .black
+                return .clear
         }
     }
     
     var tintColor:UIColor {
         switch self {
             case .light:
-                return .black
+                return .clear
             case .dark:
-                return .white
+                return .clear
         }
     }
 }
